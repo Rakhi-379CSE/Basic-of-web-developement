@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Project</title>
+  <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>My Website</header>
+    <nav>Home | About | Contact</nav>
+
+    <main class="main-center">
+      <div class="content-box">
+
+        <form class="contact-form" id="contactForm">
+          <h2>Contact Us</h2>
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+
+        <h2>📝 To-Do List</h2>
+        <div class="todo-container">
+          <input type="text" id="todoInput" placeholder="Add a task" />
+          <button onclick="addTodo()">Add</button>
+          <ul id="todoList"></ul>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>rakhimajhi2024@gmail.com</footer>
+  </div>
+
+  <script src="task2.js"></script>
+</body>
+</html>
