@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zentro E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/4f3ce16e3d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="logo"><h2>Zentro</h2></div>
+      <div class="location">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Deliver to Kolkata 700032</span>
+      </div>
+    </div>
+
+    <div class="nav-search">
+      <select class="search-dropdown">
+        <option value="all">All</option>
+        <option value="mobiles">Mobiles</option>
+        <option value="fashion">Fashion</option>
+        <option value="electronics">Electronics</option>
+      </select>
+      <input type="text" id="search-input" placeholder="Search Zentro.in">
+      <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="nav-right">
+      <div class="account">
+        <span>Hello, sign in</span><br>
+        <strong>Account & Lists</strong>
+      </div>
+      <div class="orders">
+        <span>Returns</span><br>
+        <strong>& Orders</strong>
+      </div>
+      <div class="cart" id="cart-btn">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count">🛒0</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="sub-navbar">
+    <ul>
+      <li><i class="fa-solid fa-bars"></i> All</li>
+      <li>Fresh</li>
+      <li>Best Sellers</li>
+      <li>Mobiles</li>
+      <li>Electronics</li>
+      <li>Fashion</li>
+      <li>Home & Kitchen</li>
+      <li>Books</li>
+      <li>Computers</li>
+    </ul>
+  </nav>
+
+  <section id="banner">
+    <img src="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\5938B4D054136E5D59ADA6EC9C295D7A\WhatsApp Image 2025-10-17 at 13.49.20_fa270c9e.jpg" alt="Deals Banner">
+    <img src="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\B5C01503041B70D41D80E3DBE31BBD8C\WhatsApp Image 2025-10-17 at 13.49.20_667c7475.jpg" alt="Backtoschool">
+  </section>
+
+  <main>
+    <h2 class="section-title">Featured Products</h2>
+    <div id="product-list" class="product-grid"></div>
+  </main>
+
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-cart">&times;</span>
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <div class="cart-footer">
+        <h3>Total: $<span id="cart-total">0</span></h3>
+        <button id="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>Zentro</h3>
+            <p>Your trusted e-commerce store for all essentials, delivering quality products right to your doorstep.</p>
+        </div>
+        <div class="footer-section links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Mobiles</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h4>Contact Us</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Kolkata, India</p>
+            <p><i class="fa-solid fa-phone"></i> +91 8167056001</p>
+            <p><i class="fa-solid fa-envelope"></i>rakhimajhi2024@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 Zentro E-Commerce Store. All rights reserved.
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
