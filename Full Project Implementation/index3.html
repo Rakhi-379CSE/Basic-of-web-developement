@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task 4 Project</title>
+  <link rel="stylesheet" href="task4.css" />
+</head>
+<body>
+  <header>
+    <h1>WebNest 3-in-1</h1>
+  </header>
+
+  <section>
+    <h2>1. Personal Portfolio</h2>
+    <p>👤 Welcome to my portfolio! I am a front-end developer passionate about building responsive and interactive websites.</p>
+    <ul>
+      <li><strong>About:</strong> Self-taught developer skilled in HTML, CSS, and JS.</li>
+      <li><strong>Projects:</strong> Task list, Product listing, and more.</li>
+      <li><strong>Contact:</strong>rakhimajhi2024@gmail.com</li>
+      <li>check my projects on <a href="https://github.com/Rakhi-379CSE">Github</a></li>
+      <li>my portfolio <a href="https://somnath-047.github.io/pinnacale-labs-internship/">portfolio</a></li>
+    </ul>
+  </section>
+
+  <section id="todoApp">
+    <h2>2. To-Do / Note-Taking App</h2>
+    <input type="text" id="taskInput" placeholder="Enter task..." />
+    <button onclick="addTask()">Add Task</button>
+    <div id="taskList"></div>
+  </section>
+
+  <section id="productPage">
+    <h2>3. Product Listing Page</h2>
+    <div>
+      <select id="categoryFilter">
+        <option value="All">All Categories</option>
+        <option value="Books">Books</option>
+        <option value="Electronics">Electronics</option>
+      </select>
+      <select id="sortFilter">
+        <option value="default">Sort By</option>
+        <option value="priceAsc">Price: Low to High</option>
+        <option value="priceDesc">Price: High to Low</option>
+      </select>
+    </div>
+    <div class="product-list" id="productList"></div>
+  </section>
+
+  <script src="task4.js"></script>
+</body>
+</html>

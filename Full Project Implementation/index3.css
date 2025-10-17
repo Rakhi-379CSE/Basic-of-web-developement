@@ -1,0 +1,66 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  color: #333;
+}
+header {
+  background-color: #653ca2df;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+section {
+  padding: 2rem;
+  margin: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+h2 {
+  color: #00695c;
+}
+ul, ol {
+  padding-left: 1.5rem;
+}
+#todoApp input, #todoApp button {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  background-color: #f1f8e9;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+#productPage {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.product {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f9fbe7;
+}
+select {
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+}
